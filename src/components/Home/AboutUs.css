@@ -1,0 +1,33 @@
+.about-us-outer-container {
+    max-width: 100%;
+    padding: 3% 0;
+    background-color: rgb(244, 244, 244);
+}
+.about-us-heading {
+    color: rgba(3, 0, 26, 0.944);
+    font-weight: bolder;
+    margin-bottom: 4%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+}
+
+.about-us-content {
+    text-align: justify;
+}
+
+.know-more-btn {
+    background-color: #03b615;
+    color: white;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-us-outer-container {
+        padding: 7% 0;
+    }
+
+    .about-us-content {
+        text-align: center;
+        padding-top: 6%;
+        padding-bottom: 3%;
+    }
+}

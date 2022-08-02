@@ -1,0 +1,26 @@
+.about-us-outer-container {
+    background-color: #fff;
+}
+@media only screen and (min-width: 1200px) {
+    .about-outer-contain {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-outer-contain {
+        margin-top: 13%;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 601px) {
+    .about-outer-contain {
+        margin-top: 13%;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1001px) {
+    .about-outer-contain {
+        margin-top: 5%;
+    }
+}

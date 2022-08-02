@@ -1,0 +1,113 @@
+.circulars-title {
+    color: rgba(3, 0, 26, 0.944) !important;
+    font-weight: bolder;
+    font-size: 35px;
+    padding-bottom: 20px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+}
+
+#scroll-container {
+    border-radius: 5px;
+    height: 350px;
+    overflow: hidden;
+    background-color: rgb(247, 247, 247);
+    width: 60%;
+    -webkit-box-shadow: 0px 22px 300px -52px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 22px 300px -52px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 22px 300px -52px rgba(0, 0, 0, 0.09);
+    margin: 0 auto;
+}
+
+#scroll-text {
+    height: 100%;
+    text-align: center;
+
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+
+    -moz-animation: my-animation 30s linear infinite;
+    -webkit-animation: my-animation 30s linear infinite;
+    animation: my-animation 30s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateY(100%);
+    }
+    to {
+        -moz-transform: translateY(-100%);
+    }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateY(100%);
+    }
+    to {
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    to {
+        -moz-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-150%);
+    }
+}
+
+.scroll-content {
+    display: block;
+    margin-bottom: 1px;
+}
+
+.circularlink:nth-child(odd) {
+    background-color: rgb(248, 248, 248);
+
+}
+.circularlink:not(even) {
+    background-color: rgb(246, 246, 246);
+}
+
+.circularlink {
+    color: rgb(0, 0, 171) !important;
+    font-size: 16px;
+}
+.circularlink:hover {
+    color: rgba(216, 0, 0, 0.8) !important;
+    text-decoration: underline;
+}
+
+.circularlink {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1200px) {
+    #scroll-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #scroll-container {
+        width: 90%;
+        padding: 0 15px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) and(min-width:601px) {
+    #scroll-container {
+        width: 80%;
+    }
+}

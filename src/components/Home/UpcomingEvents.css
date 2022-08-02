@@ -1,0 +1,118 @@
+.upcoming-events-container {
+    max-width: 100%;
+    padding: 3% 0;
+}
+
+/*Header*/
+.upcoming-events-header {
+    color: rgba(3, 0, 26, 0.944);
+    font-weight: bolder;
+    margin-bottom: 4%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+}
+
+/*Coundown*/
+.upcoming-events-countdown-container {
+    max-width: 40%;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+.upcoming-events-individual-container {
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #005be4;
+    color: white;
+    padding: 30px 0px;
+    box-shadow: 0px 0px 20px rgba(0, 91, 228, 0.15);
+}
+
+/*count down buttons*/
+.upcoming-events-button-group {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+.upcoming-events-btn {
+    font-weight: 600;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.upcoming-events-details-btn {
+    background-color: rgba(0, 0, 0, 0.945);
+    color: white;
+    padding: 10px 40px;
+}
+
+.upcoming-events-details-btn:hover {
+    background-color: rgba(0, 0, 0, 0.88);
+}
+
+.upcoming-events-download-btn {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+.upcoming-events-download-btn:hover {
+    background-color: rgb(244, 244, 244);
+}
+
+/*media queries*/
+@media only screen and (max-width: 600px) {
+    .upcoming-events-container {
+        padding: 10% 0;
+    }
+    .upcoming-events-header {
+        margin-bottom: 8%;
+    }
+
+    .upcoming-events-countdown-container {
+        max-width: 90%;
+        gap: 0px;
+        background-color: #0057d9;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 91, 228, 0.15);
+    }
+
+    .upcoming-events-individual-container {
+        background: transparent;
+        text-align: center;
+        position: relative;
+        left: 2%;
+        padding: 10px 20px;
+    }
+
+    .upcoming-events-value {
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    .upcoming-events-button-group {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    .upcoming-events-countdown-container {
+        max-width: 80%;
+        padding: 20px 0px;
+        gap: 20px;
+    }
+}

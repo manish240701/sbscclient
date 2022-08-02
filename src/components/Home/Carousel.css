@@ -1,0 +1,118 @@
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-position: center;
+}
+
+.bg-video-content {
+    height: 93.6vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    color: #f1f1f1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#join-class-btn {
+    position: absolute;
+    bottom: 1%;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#join-class-btn:hover {
+    background-color: rgba(52, 44, 85, 0.836);
+    color: white;
+}
+
+/* floating whatsapp */
+.floating-whatsapp-square {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.floating-whatsapp-icon {
+    font-size: 50px;
+    color: white;
+    background-color: green;
+    border-radius: 20%;
+}
+
+/* arrows */
+
+.arrows {
+    width: 60px;
+    height: 75px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 30px;
+}
+
+.arrows path {
+    stroke: #ffffff;
+    fill: transparent;
+    stroke-width: 3px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}

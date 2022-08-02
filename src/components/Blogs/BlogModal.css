@@ -1,0 +1,59 @@
+.modal-dialog {
+    width: 70%;
+    max-width: none;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.modal-content {
+    color: black;
+    height: 90%;
+    border-radius: 10px;
+    margin: 0 auto;
+    backdrop-filter: blur(20px);
+    text-align: start;
+}
+
+.modal-title {
+    text-align: start !important;
+    color: black;
+    padding: 10px 0 20px 0 !important;
+}
+
+.modal-body {
+    overflow-y: auto;
+}
+
+.btn-open-modal {
+    margin-bottom: 0.5em;
+}
+
+.blogcontent {
+    text-indent: 30px;
+    text-align: justify;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .modal-dialog {
+        width: 90%;
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(243, 243, 243);
+}

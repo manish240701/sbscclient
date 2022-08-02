@@ -1,0 +1,49 @@
+.all-circulars-link {
+    color: blue !important;
+    font-size: 17px;
+}
+
+.all-circulars-link:hover {
+    color: rgb(249, 45, 45) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .circulars-container {
+        text-align: start;
+        padding: 0 15px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .all-circulars-outer-container {
+        margin-top: 17% !important;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+    .circulars-title {
+        margin-top: 15%;
+    }
+
+    .circulars-container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .all-circulars-outer-container {
+        margin-top: 15% !important;
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    .circular-container {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    .all-circulars-outer-container {
+        margin-top: 7% !important;
+    }
+}
+
+.circulars-search {
+    width: 80%;
+    margin: 0 auto;
+}
